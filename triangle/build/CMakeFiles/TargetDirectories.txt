@@ -1,0 +1,3 @@
+/home/tommitah/development/graphics-course/triangle/build/CMakeFiles/babbys_first_triangle.dir
+/home/tommitah/development/graphics-course/triangle/build/CMakeFiles/edit_cache.dir
+/home/tommitah/development/graphics-course/triangle/build/CMakeFiles/rebuild_cache.dir

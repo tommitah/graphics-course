@@ -1,0 +1,15 @@
+unzip glad.zip
+inside there's three files: glad.c, glad.h and khrplatform.h
+
+the header files should go to /usr/include/glad (fuck off windows)
+be sure to check that all three files have consistent #includes (clangd-lsp should catch these)
+
+that leaves the glad.c file, which can be included in the src
+
+Compiling:
+create a CMakeLists.txt file
+create a build file
+..../build cmake && make
+
+To run:
+./binary
