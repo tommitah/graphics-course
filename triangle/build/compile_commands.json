@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/tommitah/development/graphics-course/triangle/build",
+  "command": "/bin/cc    -o CMakeFiles/babbys_first_triangle.dir/glad.c.o -c /home/tommitah/development/graphics-course/triangle/glad.c",
+  "file": "/home/tommitah/development/graphics-course/triangle/glad.c"
+},
+{
+  "directory": "/home/tommitah/development/graphics-course/triangle/build",
+  "command": "/bin/c++    -o CMakeFiles/babbys_first_triangle.dir/main.cpp.o -c /home/tommitah/development/graphics-course/triangle/main.cpp",
+  "file": "/home/tommitah/development/graphics-course/triangle/main.cpp"
+}
+]

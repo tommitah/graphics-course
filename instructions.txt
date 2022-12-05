@@ -1,14 +1,19 @@
+Running this requires binary packages that are packaged in the distro.
+deps:
+(Void) glfw, glfw-devel
+(Ubuntu/other Debian) libglfw3 libglfw3-dev
+
 unzip glad.zip
 inside there's three files: glad.c, glad.h and khrplatform.h
 
-the header files should go to /usr/include/glad (fuck off windows)
+the header files should go to /usr/include/glad
 be sure to check that all three files have consistent #includes (clangd-lsp should catch these)
 
 that leaves the glad.c file, which can be included in the src
 
 Compiling:
 create a CMakeLists.txt file
-create a build file
+create a build directory
 ..../build cmake && make
 
 To run:
