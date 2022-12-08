@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/tommitah/development/graphics-course/lecture10/transformation1/build",
+  "command": "/bin/cc    -o CMakeFiles/lecture10_transformation_one.dir/glad.c.o -c /home/tommitah/development/graphics-course/lecture10/transformation1/glad.c",
+  "file": "/home/tommitah/development/graphics-course/lecture10/transformation1/glad.c"
+},
+{
+  "directory": "/home/tommitah/development/graphics-course/lecture10/transformation1/build",
+  "command": "/bin/c++    -o CMakeFiles/lecture10_transformation_one.dir/shader.cpp.o -c /home/tommitah/development/graphics-course/lecture10/transformation1/shader.cpp",
+  "file": "/home/tommitah/development/graphics-course/lecture10/transformation1/shader.cpp"
+},
+{
+  "directory": "/home/tommitah/development/graphics-course/lecture10/transformation1/build",
+  "command": "/bin/c++    -o CMakeFiles/lecture10_transformation_one.dir/main.cpp.o -c /home/tommitah/development/graphics-course/lecture10/transformation1/main.cpp",
+  "file": "/home/tommitah/development/graphics-course/lecture10/transformation1/main.cpp"
+}
+]

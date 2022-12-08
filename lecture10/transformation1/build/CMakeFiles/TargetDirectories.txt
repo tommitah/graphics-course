@@ -1,0 +1,3 @@
+/home/tommitah/development/graphics-course/lecture10/transformation1/build/CMakeFiles/lecture10_transformation_one.dir
+/home/tommitah/development/graphics-course/lecture10/transformation1/build/CMakeFiles/edit_cache.dir
+/home/tommitah/development/graphics-course/lecture10/transformation1/build/CMakeFiles/rebuild_cache.dir

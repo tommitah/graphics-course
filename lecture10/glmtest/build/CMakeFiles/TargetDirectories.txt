@@ -1,0 +1,3 @@
+/home/tommitah/development/graphics-course/lecture10/glmtest/build/CMakeFiles/lecture10_glmtest.dir
+/home/tommitah/development/graphics-course/lecture10/glmtest/build/CMakeFiles/edit_cache.dir
+/home/tommitah/development/graphics-course/lecture10/glmtest/build/CMakeFiles/rebuild_cache.dir

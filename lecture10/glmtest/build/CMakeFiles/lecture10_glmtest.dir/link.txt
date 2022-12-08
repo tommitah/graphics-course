@@ -1,0 +1,1 @@
+/bin/c++ CMakeFiles/lecture10_glmtest.dir/glad.c.o CMakeFiles/lecture10_glmtest.dir/main.cpp.o -o lecture10_glmtest  -lGL -ldl -lglfw 
