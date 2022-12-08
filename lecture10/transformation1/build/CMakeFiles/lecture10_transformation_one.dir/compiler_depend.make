@@ -66,20 +66,211 @@ CMakeFiles/lecture10_transformation_one.dir/glad.c.o: /home/tommitah/development
 
 CMakeFiles/lecture10_transformation_one.dir/main.cpp.o: /home/tommitah/development/graphics-course/lecture10/transformation1/main.cpp \
   /usr/include/stdc-predef.h \
-  /usr/include/stdio.h \
-  /usr/include/bits/libc-header-start.h \
+  /usr/include/glm/ext/matrix_transform.hpp \
+  /usr/include/glm/gtc/constants.hpp \
+  /usr/include/glm/ext/scalar_constants.hpp \
+  /usr/include/glm/detail/setup.hpp \
+  /usr/include/c++/10.2/cassert \
+  /usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/c++config.h \
+  /usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/os_defines.h \
   /usr/include/features.h \
   /usr/include/sys/cdefs.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/long-double.h \
   /usr/include/gnu/stubs.h \
   /usr/include/gnu/stubs-64.h \
+  /usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h \
+  /usr/include/assert.h \
+  /usr/include/c++/10.2/cstddef \
   /usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stddef.h \
-  /usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stdarg.h \
+  /usr/include/glm/simd/platform.h \
+  /usr/include/c++/10.2/cstdint \
+  /usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/bits/libc-header-start.h \
   /usr/include/bits/types.h \
   /usr/include/bits/timesize.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/time64.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/c++/10.2/type_traits \
+  /usr/include/glm/ext/scalar_constants.inl \
+  /usr/include/c++/10.2/limits \
+  /usr/include/glm/gtc/constants.inl \
+  /usr/include/glm/geometric.hpp \
+  /usr/include/glm/detail/type_vec3.hpp \
+  /usr/include/glm/detail/qualifier.hpp \
+  /usr/include/glm/detail/setup.hpp \
+  /usr/include/glm/detail/type_vec3.inl \
+  /usr/include/glm/detail/compute_vector_relational.hpp \
+  /usr/include/glm/detail/func_geometric.inl \
+  /usr/include/glm/exponential.hpp \
+  /usr/include/glm/detail/type_vec1.hpp \
+  /usr/include/glm/detail/type_vec1.inl \
+  /usr/include/glm/detail/type_vec2.hpp \
+  /usr/include/glm/detail/type_vec2.inl \
+  /usr/include/glm/detail/type_vec4.hpp \
+  /usr/include/glm/detail/type_vec4.inl \
+  /usr/include/c++/10.2/cmath \
+  /usr/include/c++/10.2/bits/cpp_type_traits.h \
+  /usr/include/c++/10.2/ext/type_traits.h \
+  /usr/include/math.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/c++/10.2/bits/std_abs.h \
+  /usr/include/stdlib.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/sys/types.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/endian.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/sys/select.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/glm/detail/func_exponential.inl \
+  /usr/include/glm/vector_relational.hpp \
+  /usr/include/glm/detail/setup.hpp \
+  /usr/include/glm/detail/func_vector_relational.inl \
+  /usr/include/glm/detail/_vectorize.hpp \
+  /usr/include/glm/common.hpp \
+  /usr/include/glm/detail/_fixes.hpp \
+  /usr/include/glm/detail/func_common.inl \
+  /usr/include/glm/detail/compute_common.hpp \
+  /usr/include/glm/trigonometric.hpp \
+  /usr/include/glm/detail/func_trigonometric.inl \
+  /usr/include/glm/matrix.hpp \
+  /usr/include/glm/vec2.hpp \
+  /usr/include/glm/ext/vector_bool2.hpp \
+  /usr/include/glm/ext/vector_bool2_precision.hpp \
+  /usr/include/glm/ext/vector_float2.hpp \
+  /usr/include/glm/ext/vector_float2_precision.hpp \
+  /usr/include/glm/ext/vector_double2.hpp \
+  /usr/include/glm/ext/vector_double2_precision.hpp \
+  /usr/include/glm/ext/vector_int2.hpp \
+  /usr/include/glm/ext/vector_int2_sized.hpp \
+  /usr/include/glm/ext/scalar_int_sized.hpp \
+  /usr/include/glm/ext/vector_uint2.hpp \
+  /usr/include/glm/ext/vector_uint2_sized.hpp \
+  /usr/include/glm/ext/scalar_uint_sized.hpp \
+  /usr/include/glm/vec3.hpp \
+  /usr/include/glm/ext/vector_bool3.hpp \
+  /usr/include/glm/ext/vector_bool3_precision.hpp \
+  /usr/include/glm/ext/vector_float3.hpp \
+  /usr/include/glm/ext/vector_float3_precision.hpp \
+  /usr/include/glm/ext/vector_double3.hpp \
+  /usr/include/glm/ext/vector_double3_precision.hpp \
+  /usr/include/glm/ext/vector_int3.hpp \
+  /usr/include/glm/ext/vector_int3_sized.hpp \
+  /usr/include/glm/ext/vector_uint3.hpp \
+  /usr/include/glm/ext/vector_uint3_sized.hpp \
+  /usr/include/glm/vec4.hpp \
+  /usr/include/glm/ext/vector_bool4.hpp \
+  /usr/include/glm/ext/vector_bool4_precision.hpp \
+  /usr/include/glm/ext/vector_float4.hpp \
+  /usr/include/glm/ext/vector_float4_precision.hpp \
+  /usr/include/glm/ext/vector_double4.hpp \
+  /usr/include/glm/ext/vector_double4_precision.hpp \
+  /usr/include/glm/ext/vector_int4.hpp \
+  /usr/include/glm/ext/vector_int4_sized.hpp \
+  /usr/include/glm/ext/vector_uint4.hpp \
+  /usr/include/glm/ext/vector_uint4_sized.hpp \
+  /usr/include/glm/mat2x2.hpp \
+  /usr/include/glm/ext/matrix_double2x2.hpp \
+  /usr/include/glm/detail/type_mat2x2.hpp \
+  /usr/include/glm/detail/type_mat2x2.inl \
+  /usr/include/glm/ext/matrix_double2x2_precision.hpp \
+  /usr/include/glm/ext/matrix_float2x2.hpp \
+  /usr/include/glm/ext/matrix_float2x2_precision.hpp \
+  /usr/include/glm/mat2x3.hpp \
+  /usr/include/glm/ext/matrix_double2x3.hpp \
+  /usr/include/glm/detail/type_mat2x3.hpp \
+  /usr/include/glm/detail/type_mat2x3.inl \
+  /usr/include/glm/ext/matrix_double2x3_precision.hpp \
+  /usr/include/glm/ext/matrix_float2x3.hpp \
+  /usr/include/glm/ext/matrix_float2x3_precision.hpp \
+  /usr/include/glm/mat2x4.hpp \
+  /usr/include/glm/ext/matrix_double2x4.hpp \
+  /usr/include/glm/detail/type_mat2x4.hpp \
+  /usr/include/glm/detail/type_mat2x4.inl \
+  /usr/include/glm/ext/matrix_double2x4_precision.hpp \
+  /usr/include/glm/ext/matrix_float2x4.hpp \
+  /usr/include/glm/ext/matrix_float2x4_precision.hpp \
+  /usr/include/glm/mat3x2.hpp \
+  /usr/include/glm/ext/matrix_double3x2.hpp \
+  /usr/include/glm/detail/type_mat3x2.hpp \
+  /usr/include/glm/detail/type_mat3x2.inl \
+  /usr/include/glm/ext/matrix_double3x2_precision.hpp \
+  /usr/include/glm/ext/matrix_float3x2.hpp \
+  /usr/include/glm/ext/matrix_float3x2_precision.hpp \
+  /usr/include/glm/mat3x3.hpp \
+  /usr/include/glm/ext/matrix_double3x3.hpp \
+  /usr/include/glm/detail/type_mat3x3.hpp \
+  /usr/include/glm/detail/type_mat3x3.inl \
+  /usr/include/glm/ext/matrix_double3x3_precision.hpp \
+  /usr/include/glm/ext/matrix_float3x3.hpp \
+  /usr/include/glm/ext/matrix_float3x3_precision.hpp \
+  /usr/include/glm/mat3x4.hpp \
+  /usr/include/glm/ext/matrix_double3x4.hpp \
+  /usr/include/glm/detail/type_mat3x4.hpp \
+  /usr/include/glm/detail/type_mat3x4.inl \
+  /usr/include/glm/ext/matrix_double3x4_precision.hpp \
+  /usr/include/glm/ext/matrix_float3x4.hpp \
+  /usr/include/glm/ext/matrix_float3x4_precision.hpp \
+  /usr/include/glm/mat4x2.hpp \
+  /usr/include/glm/ext/matrix_double4x2.hpp \
+  /usr/include/glm/detail/type_mat4x2.hpp \
+  /usr/include/glm/detail/type_mat4x2.inl \
+  /usr/include/glm/ext/matrix_double4x2_precision.hpp \
+  /usr/include/glm/ext/matrix_float4x2.hpp \
+  /usr/include/glm/ext/matrix_float4x2_precision.hpp \
+  /usr/include/glm/mat4x3.hpp \
+  /usr/include/glm/ext/matrix_double4x3.hpp \
+  /usr/include/glm/detail/type_mat4x3.hpp \
+  /usr/include/glm/detail/type_mat4x3.inl \
+  /usr/include/glm/ext/matrix_double4x3_precision.hpp \
+  /usr/include/glm/ext/matrix_float4x3.hpp \
+  /usr/include/glm/ext/matrix_float4x3_precision.hpp \
+  /usr/include/glm/mat4x4.hpp \
+  /usr/include/glm/ext/matrix_double4x4.hpp \
+  /usr/include/glm/detail/type_mat4x4.hpp \
+  /usr/include/glm/detail/type_mat4x4.inl \
+  /usr/include/glm/ext/matrix_double4x4_precision.hpp \
+  /usr/include/glm/ext/matrix_float4x4.hpp \
+  /usr/include/glm/ext/matrix_float4x4_precision.hpp \
+  /usr/include/glm/detail/func_matrix.inl \
+  /usr/include/glm/ext/matrix_transform.inl \
+  /usr/include/stdio.h \
+  /usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stdarg.h \
   /usr/include/bits/types/__fpos_t.h \
   /usr/include/bits/types/__mbstate_t.h \
   /usr/include/bits/types/__fpos64_t.h \
@@ -88,16 +279,35 @@ CMakeFiles/lecture10_transformation_one.dir/main.cpp.o: /home/tommitah/developme
   /usr/include/bits/types/struct_FILE.h \
   /usr/include/bits/types/cookie_io_functions_t.h \
   /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/floatn-common.h \
   /usr/include/glad/glad.h \
   /usr/include/glad/khrplatform.h \
-  /usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-uintn.h \
   /usr/include/GLFW/glfw3.h \
+  /usr/include/glm/glm.hpp \
+  /usr/include/c++/10.2/climits \
+  /usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include-fixed/limits.h \
+  /usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include-fixed/syslimits.h \
+  /usr/include/limits.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/linux/limits.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/c++/10.2/cfloat \
+  /usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/float.h \
+  /usr/include/glm/fwd.hpp \
+  /usr/include/glm/packing.hpp \
+  /usr/include/glm/detail/func_packing.inl \
+  /usr/include/glm/detail/type_half.hpp \
+  /usr/include/glm/detail/type_half.inl \
+  /usr/include/glm/integer.hpp \
+  /usr/include/glm/detail/func_integer.inl \
+  /usr/include/glm/gtc/matrix_transform.hpp \
+  /usr/include/glm/ext/matrix_projection.hpp \
+  /usr/include/glm/ext/matrix_projection.inl \
+  /usr/include/glm/ext/matrix_clip_space.hpp \
+  /usr/include/glm/ext/matrix_clip_space.inl \
+  /usr/include/glm/gtc/matrix_transform.inl \
   /home/tommitah/development/graphics-course/lecture10/transformation1/shader.hpp
 
 CMakeFiles/lecture10_transformation_one.dir/shader.cpp.o: /home/tommitah/development/graphics-course/lecture10/transformation1/shader.cpp \
@@ -302,408 +512,750 @@ CMakeFiles/lecture10_transformation_one.dir/shader.cpp.o: /home/tommitah/develop
   /home/tommitah/development/graphics-course/lecture10/transformation1/shader.hpp
 
 
-/usr/include/c++/10.2/stdlib.h:
-
-/usr/include/c++/10.2/bits/stl_heap.h:
-
 /usr/include/c++/10.2/bits/algorithmfwd.h:
+
+/usr/include/c++/10.2/bits/stl_algo.h:
+
+/usr/include/c++/10.2/bits/stl_relops.h:
 
 /usr/include/c++/10.2/bits/fstream.tcc:
 
-/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/c++io.h:
-
 /usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/basic_file.h:
+
+/usr/include/c++/10.2/fstream:
+
+/usr/include/c++/10.2/bits/ostream.tcc:
+
+/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h:
 
 /usr/include/c++/10.2/bits/streambuf_iterator.h:
 
 /usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/ctype_base.h:
 
-/usr/include/c++/10.2/cwctype:
-
-/usr/include/c++/10.2/bits/locale_facets.h:
-
-/usr/include/c++/10.2/bits/basic_ios.h:
+/usr/include/bits/wctype-wchar.h:
 
 /usr/include/c++/10.2/bits/streambuf.tcc:
 
-/usr/include/c++/10.2/bits/stl_algo.h:
-
-/usr/include/c++/10.2/streambuf:
-
-/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/error_constants.h:
-
-/usr/include/c++/10.2/system_error:
+/usr/include/c++/10.2/stdexcept:
 
 /usr/include/c++/10.2/bits/locale_classes.h:
 
+/usr/include/c++/10.2/bits/ios_base.h:
+
+/usr/include/c++/10.2/ios:
+
 /usr/include/c++/10.2/ostream:
+
+/usr/include/c++/10.2/iostream:
+
+/usr/include/c++/10.2/bits/vector.tcc:
+
+/usr/include/c++/10.2/bits/basic_ios.tcc:
 
 /usr/include/c++/10.2/bits/stl_bvector.h:
 
-/usr/include/c++/10.2/bits/stl_vector.h:
-
-/usr/include/c++/10.2/istream:
-
 /usr/include/c++/10.2/bits/stl_uninitialized.h:
 
-/usr/include/c++/10.2/bits/locale_classes.tcc:
+/usr/include/c++/10.2/bits/basic_string.tcc:
 
-/usr/include/c++/10.2/bits/functional_hash.h:
-
-/usr/include/c++/10.2/limits:
-
-/usr/include/c++/10.2/bits/charconv.h:
+/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/error_constants.h:
 
 /usr/include/bits/types/error_t.h:
 
 /usr/include/asm-generic/errno-base.h:
 
-/usr/include/asm/errno.h:
-
 /usr/include/linux/errno.h:
+
+/usr/include/bits/errno.h:
 
 /usr/include/errno.h:
 
-/usr/include/c++/10.2/bits/std_abs.h:
+/usr/include/c++/10.2/bits/alloc_traits.h:
 
-/usr/include/c++/10.2/cstdio:
+/usr/include/asm-generic/errno.h:
 
 /usr/include/c++/10.2/ext/alloc_traits.h:
 
 /usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/atomic_word.h:
 
-/usr/include/c++/10.2/cerrno:
+/usr/include/c++/10.2/bits/charconv.h:
 
 /usr/include/bits/setjmp.h:
 
-/usr/include/bits/types/struct_tm.h:
-
-/usr/include/wctype.h:
-
-/usr/include/bits/errno.h:
+/usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/bits/timex.h:
 
-/usr/include/time.h:
+/usr/include/bits/time.h:
 
-/usr/include/c++/10.2/bits/basic_string.tcc:
+/usr/include/time.h:
 
 /usr/include/bits/cpu-set.h:
 
 /usr/include/bits/types/struct_sched_param.h:
 
-/usr/include/bits/sched.h:
-
 /usr/include/pthread.h:
-
-/usr/include/c++/10.2/fstream:
-
-/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/gthr.h:
-
-/usr/include/glad/glad.h:
-
-/usr/include/c++/10.2/exception:
-
-/usr/include/bits/types/__locale_t.h:
-
-/usr/include/alloca.h:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/c++/10.2/bits/stringfwd.h:
-
-/usr/include/c++/10.2/bits/uniform_int_dist.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/glad/khrplatform.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/c++/10.2/bits/stl_pair.h:
-
-/usr/include/c++/10.2/cstdlib:
-
-/usr/include/c++/10.2/bits/cxxabi_forced.h:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/c++/10.2/ios:
-
-/usr/include/endian.h:
-
-/usr/include/c++/10.2/bits/stl_relops.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stdint.h:
-
-/home/tommitah/development/graphics-course/lecture10/transformation1/glad.c:
-
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
 
 /usr/include/c++/10.2/ext/atomicity.h:
 
-/usr/include/bits/types/timer_t.h:
+/usr/include/c++/10.2/bits/basic_string.h:
 
-/usr/include/stdio.h:
+/usr/include/c++/10.2/bits/range_cmp.h:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/c++/10.2/bits/range_access.h:
 
-/usr/include/c++/10.2/typeinfo:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/c++/10.2/bits/localefwd.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stddef.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/bits/time64.h:
-
-/usr/include/c++/10.2/cwchar:
-
-/usr/include/bits/typesizes.h:
-
-/usr/include/c++/10.2/stdexcept:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/include/bits/types.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/c++/10.2/bits/exception_defines.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/c++/10.2/bits/predefined_ops.h:
-
-/usr/include/sys/select.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/c++/10.2/bits/cpp_type_traits.h:
-
-/usr/include/c++/10.2/bits/basic_ios.tcc:
-
-/usr/include/c++/10.2/bits/alloc_traits.h:
-
-/usr/include/features.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/bits/time.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/c++/10.2/utility:
-
-/usr/include/strings.h:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/c++/10.2/bits/stl_construct.h:
-
-/usr/include/bits/byteswap.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/c++/10.2/vector:
-
-/usr/include/bits/types/clock_t.h:
-
-/usr/include/c++/10.2/bits/exception.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stdarg.h:
-
-/usr/include/bits/select.h:
+/usr/include/c++/10.2/backward/binders.h:
 
 /usr/include/c++/10.2/bits/ostream_insert.h:
 
-/usr/include/c++/10.2/bits/stl_iterator_base_funcs.h:
+/usr/include/ctype.h:
 
-/usr/include/bits/types/__fpos64_t.h:
+/usr/include/c++/10.2/iosfwd:
 
-/usr/include/c++/10.2/bits/codecvt.h:
+/usr/include/bits/locale.h:
 
-/usr/include/bits/types/FILE.h:
+/usr/include/c++/10.2/bits/stl_construct.h:
 
-/usr/include/sys/cdefs.h:
+/usr/include/c++/10.2/clocale:
 
-/usr/include/GLFW/glfw3.h:
+/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/c++locale.h:
 
-/usr/include/bits/types/__sigset_t.h:
+/usr/include/c++/10.2/bits/localefwd.h:
 
-/usr/include/bits/timesize.h:
+/usr/include/c++/10.2/bits/nested_exception.h:
 
-/usr/include/bits/waitstatus.h:
+/usr/include/c++/10.2/bits/hash_bytes.h:
 
-/usr/include/bits/wctype-wchar.h:
+/usr/include/c++/10.2/bits/cxxabi_init_exception.h:
 
-/usr/include/sys/types.h:
+/usr/include/c++/10.2/bits/exception.h:
 
-/usr/include/stdint.h:
+/usr/include/c++/10.2/new:
+
+/usr/include/c++/10.2/ext/new_allocator.h:
+
+/usr/include/c++/10.2/vector:
+
+/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/10.2/bits/allocator.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/c++/10.2/bits/postypes.h:
+
+/usr/include/c++/10.2/bits/predefined_ops.h:
+
+/usr/include/c++/10.2/debug/debug.h:
+
+/usr/include/c++/10.2/bits/ptr_traits.h:
 
 /usr/include/c++/10.2/debug/assertions.h:
 
-/usr/include/bits/wchar.h:
+/usr/include/c++/10.2/bits/concept_check.h:
+
+/usr/include/c++/10.2/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/10.2/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/10.2/cerrno:
+
+/usr/include/bits/types/wint_t.h:
+
+/usr/include/glm/ext/scalar_int_sized.hpp:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/c++/10.2/initializer_list:
+
+/usr/include/glm/detail/type_mat3x2.inl:
+
+/usr/include/glm/ext/matrix_projection.hpp:
+
+/usr/include/glm/ext/vector_bool2.hpp:
+
+/usr/include/glm/detail/_vectorize.hpp:
+
+/usr/include/c++/10.2/cstddef:
+
+/usr/include/c++/10.2/bits/exception_defines.h:
+
+/usr/include/glm/detail/func_vector_relational.inl:
+
+/usr/include/glm/ext/matrix_float4x4_precision.hpp:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/glm/detail/type_mat3x3.hpp:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/include/glm/vector_relational.hpp:
+
+/usr/include/bits/flt-eval-method.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/c++/10.2/typeinfo:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/glm/detail/type_vec4.inl:
+
+/usr/include/bits/types/struct_tm.h:
+
+/usr/include/glm/detail/type_vec1.hpp:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include-fixed/syslimits.h:
+
+/usr/include/glm/geometric.hpp:
+
+/usr/include/glm/ext/matrix_double3x2_precision.hpp:
+
+/usr/include/glm/detail/type_vec1.inl:
+
+/usr/include/glm/ext/matrix_clip_space.hpp:
+
+/usr/include/glm/exponential.hpp:
+
+/usr/include/c++/10.2/bits/uniform_int_dist.h:
+
+/usr/include/glm/detail/func_geometric.inl:
+
+/usr/include/c++/10.2/bits/locale_classes.tcc:
+
+/usr/include/c++/10.2/ext/string_conversions.h:
+
+/usr/include/glm/detail/type_vec3.inl:
+
+/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/c++io.h:
+
+/usr/include/glm/gtc/constants.inl:
+
+/usr/include/glm/detail/func_common.inl:
+
+/usr/include/bits/mathcalls-narrow.h:
+
+/usr/include/glm/ext/vector_int4.hpp:
+
+/usr/include/glm/ext/matrix_float2x4_precision.hpp:
+
+/usr/include/c++/10.2/exception:
+
+/usr/include/glm/ext/vector_float2.hpp:
+
+/usr/include/c++/10.2/bits/stl_iterator.h:
+
+/usr/include/glm/ext/scalar_uint_sized.hpp:
+
+/usr/include/c++/10.2/ext/numeric_traits.h:
+
+/usr/include/c++/10.2/type_traits:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/glm/packing.hpp:
+
+/usr/include/c++/10.2/bits/cpp_type_traits.h:
+
+/usr/include/c++/10.2/bits/char_traits.h:
+
+/usr/include/glm/vec2.hpp:
+
+/usr/include/c++/10.2/cstdint:
+
+/usr/include/c++/10.2/ext/type_traits.h:
+
+/usr/include/c++/10.2/cwctype:
+
+/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/glm/ext/scalar_constants.inl:
+
+/usr/include/c++/10.2/utility:
+
+/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/c++config.h:
+
+/usr/include/c++/10.2/istream:
+
+/usr/include/glm/simd/platform.h:
+
+/usr/include/glm/gtc/matrix_transform.hpp:
+
+/usr/include/glm/ext/vector_double3_precision.hpp:
+
+/usr/include/glm/gtc/constants.hpp:
+
+/usr/include/glm/ext/vector_int2.hpp:
+
+/usr/include/c++/10.2/bits/functional_hash.h:
 
 /home/tommitah/development/graphics-course/lecture10/transformation1/main.cpp:
 
+/usr/include/glm/mat4x4.hpp:
+
+/usr/include/linux/limits.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/bits/timesize.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/glm/detail/func_exponential.inl:
+
+/usr/include/glm/ext/scalar_constants.hpp:
+
+/usr/include/glm/ext/matrix_double3x4_precision.hpp:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/glm/ext/vector_double2_precision.hpp:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stdarg.h:
+
+/usr/include/math.h:
+
+/usr/include/glm/common.hpp:
+
+/usr/include/c++/10.2/system_error:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/glm/detail/type_vec2.inl:
+
+/usr/include/c++/10.2/bits/locale_facets.tcc:
+
+/usr/include/c++/10.2/limits:
+
+/usr/include/glm/ext/vector_uint3.hpp:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/c++/10.2/bits/istream.tcc:
+
+/usr/include/c++/10.2/bits/iterator_concepts.h:
+
+/usr/include/glm/detail/compute_common.hpp:
+
+/usr/include/strings.h:
+
+/usr/include/glm/ext/matrix_float3x3_precision.hpp:
+
+/usr/include/bits/types/__mbstate_t.h:
+
+/usr/include/c++/10.2/bits/exception_ptr.h:
+
+/usr/include/glm/ext/matrix_double2x2_precision.hpp:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/c++/10.2/bits/functexcept.h:
+
+/usr/include/glm/detail/type_mat3x4.hpp:
+
+/usr/include/GLFW/glfw3.h:
+
+/usr/include/glm/ext/vector_double2.hpp:
+
+/usr/include/alloca.h:
+
+/usr/include/glm/ext/vector_bool4_precision.hpp:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/glm/ext/vector_float2_precision.hpp:
+
+/usr/include/sys/select.h:
+
+/usr/include/glm/ext/vector_float3.hpp:
+
+/usr/include/glm/ext/matrix_float2x4.hpp:
+
+/usr/include/glm/ext/vector_int2_sized.hpp:
+
+/usr/include/c++/10.2/bits/stl_tempbuf.h:
+
+/usr/include/glm/ext/matrix_double2x3.hpp:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/glm/ext/matrix_double4x2_precision.hpp:
+
+/usr/include/glm/detail/func_trigonometric.inl:
+
+/usr/include/glm/ext/vector_bool3_precision.hpp:
+
+/usr/include/glm/ext/matrix_double2x2.hpp:
+
+/usr/include/glm/trigonometric.hpp:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/glm/ext/vector_int4_sized.hpp:
+
+/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/os_defines.h:
+
+/usr/include/glm/detail/type_mat4x4.hpp:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/string.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/glm/detail/type_vec3.hpp:
+
+/usr/include/bits/floatn.h:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stddef.h:
+
+/usr/include/bits/types/locale_t.h:
+
+/usr/include/c++/10.2/bits/basic_ios.h:
+
+/usr/include/glm/ext/vector_int3.hpp:
+
+/usr/include/glm/glm.hpp:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/gthr-default.h:
+
+/usr/include/locale.h:
+
+/usr/include/glm/detail/type_vec4.hpp:
+
+/usr/include/glm/detail/_fixes.hpp:
+
+/usr/include/c++/10.2/bits/locale_facets.h:
+
+/usr/include/glm/mat3x3.hpp:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/stdio.h:
+
+/usr/include/glm/ext/matrix_double2x4.hpp:
+
+/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/gthr.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/glm/detail/compute_vector_relational.hpp:
+
+/usr/include/glm/vec3.hpp:
+
+/usr/include/c++/10.2/bits/stl_vector.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+/home/tommitah/development/graphics-course/lecture10/transformation1/glad.c:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/c++/10.2/cstdlib:
+
+/usr/include/bits/sched.h:
+
+/usr/include/features.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/glm/ext/matrix_double3x3_precision.hpp:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/glm/fwd.hpp:
+
+/usr/include/c++/10.2/cwchar:
+
+/usr/include/glm/ext/vector_bool2_precision.hpp:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/glm/ext/matrix_transform.hpp:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/glm/ext/vector_uint3_sized.hpp:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/c++/10.2/bits/stl_heap.h:
+
+/usr/include/glm/ext/vector_uint4.hpp:
+
+/usr/include/glad/glad.h:
+
+/usr/include/glm/ext/vector_uint2.hpp:
+
+/usr/include/glm/ext/vector_uint2_sized.hpp:
+
+/usr/include/glm/detail/type_mat4x2.hpp:
+
+/usr/include/glm/detail/type_mat4x2.inl:
+
+/usr/include/glm/matrix.hpp:
+
+/usr/include/glm/ext/vector_bool3.hpp:
+
+/usr/include/glm/detail/type_mat4x4.inl:
+
+/usr/include/glm/ext/vector_float3_precision.hpp:
+
+/usr/include/glm/ext/vector_double3.hpp:
+
+/usr/include/c++/10.2/algorithm:
+
+/usr/include/assert.h:
+
+/usr/include/glm/ext/vector_int3_sized.hpp:
+
+/usr/include/glm/ext/vector_bool4.hpp:
+
+/usr/include/glm/detail/type_mat2x4.inl:
+
+/usr/include/glm/ext/vector_float4.hpp:
+
+/usr/include/glm/ext/vector_float4_precision.hpp:
+
+/usr/include/glm/ext/vector_double4_precision.hpp:
+
+/usr/include/glm/ext/matrix_float4x2_precision.hpp:
+
+/usr/include/glm/ext/vector_double4.hpp:
+
+/usr/include/glm/mat2x2.hpp:
+
+/usr/include/bits/types.h:
+
+/usr/include/glm/detail/type_mat2x2.hpp:
+
+/usr/include/glm/ext/matrix_float2x2.hpp:
+
+/usr/include/c++/10.2/stdlib.h:
+
+/usr/include/c++/10.2/bits/std_abs.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/glm/ext/matrix_float2x2_precision.hpp:
+
+/usr/include/glm/mat2x3.hpp:
+
+/usr/include/glm/detail/qualifier.hpp:
+
+/usr/include/glm/gtc/matrix_transform.inl:
+
+/usr/include/glm/detail/type_mat2x3.hpp:
+
+/usr/include/glm/ext/matrix_float3x4.hpp:
+
+/usr/include/glm/detail/type_vec2.hpp:
+
+/usr/include/glm/detail/type_mat2x3.inl:
+
+/usr/include/glm/ext/matrix_double2x3_precision.hpp:
+
+/usr/include/glm/detail/type_mat3x2.hpp:
+
+/usr/include/glm/ext/matrix_double4x4.hpp:
+
+/usr/include/glm/ext/matrix_float2x3.hpp:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/glm/ext/matrix_float2x3_precision.hpp:
+
+/usr/include/glm/mat2x4.hpp:
+
+/usr/include/glm/detail/type_mat2x4.hpp:
+
+/usr/include/glm/ext/matrix_float4x3.hpp:
+
+/usr/include/c++/10.2/cmath:
+
+/usr/include/c++/10.2/bits/move.h:
+
+/usr/include/glm/ext/matrix_float3x2.hpp:
+
+/usr/include/glm/ext/matrix_float3x2_precision.hpp:
+
+/usr/include/glm/ext/matrix_double3x3.hpp:
+
+/usr/include/glm/ext/vector_uint4_sized.hpp:
+
+/usr/include/glm/detail/type_mat3x3.inl:
+
+/usr/include/c++/10.2/bits/stl_algobase.h:
+
+/usr/include/glm/mat3x4.hpp:
+
+/usr/include/wchar.h:
+
+/usr/include/glm/mat3x2.hpp:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/glm/ext/matrix_double3x4.hpp:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/glm/detail/type_mat3x4.inl:
+
+/usr/include/c++/10.2/streambuf:
+
+/usr/include/c++/10.2/cstdio:
+
+/usr/include/glm/ext/matrix_float3x4_precision.hpp:
+
+/usr/include/glm/mat4x3.hpp:
+
+/usr/include/glm/mat4x2.hpp:
+
+/usr/include/c++/10.2/bits/stl_function.h:
+
+/usr/include/glm/ext/matrix_double4x2.hpp:
+
+/usr/include/glm/ext/matrix_float4x2.hpp:
+
+/usr/include/glm/ext/matrix_float4x3_precision.hpp:
+
+/usr/include/c++/10.2/cassert:
+
+/usr/include/glm/ext/matrix_double3x2.hpp:
+
+/usr/include/glm/ext/matrix_double4x3.hpp:
+
+/usr/include/stdlib.h:
+
+/usr/include/glm/detail/func_integer.inl:
+
+/usr/include/c++/10.2/bits/codecvt.h:
+
+/usr/include/glm/detail/type_mat4x3.hpp:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/glm/detail/type_mat4x3.inl:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include-fixed/limits.h:
+
+/usr/include/c++/10.2/cctype:
+
+/usr/include/glm/detail/setup.hpp:
+
+/usr/include/glm/ext/matrix_clip_space.inl:
+
+/usr/include/glm/ext/matrix_double4x3_precision.hpp:
+
+/usr/include/c++/10.2/cfloat:
+
+/usr/include/c++/10.2/concepts:
+
+/usr/include/glm/ext/matrix_double4x4_precision.hpp:
+
+/usr/include/glm/ext/matrix_float4x4.hpp:
+
+/usr/include/glm/detail/func_matrix.inl:
+
+/usr/include/glm/ext/matrix_float3x3.hpp:
+
+/usr/include/glm/ext/matrix_transform.inl:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/10.2/climits:
+
+/usr/include/c++/10.2/bits/cxxabi_forced.h:
+
+/usr/include/limits.h:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/glad/khrplatform.h:
+
+/usr/include/glm/vec4.hpp:
+
+/usr/include/glm/ext/matrix_double2x4_precision.hpp:
+
+/usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/float.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/bits/uio_lim.h:
+
+/usr/include/glm/detail/func_packing.inl:
+
+/usr/include/glm/detail/type_half.hpp:
+
+/usr/include/glm/detail/type_half.inl:
+
+/usr/include/glm/integer.hpp:
+
+/usr/include/bits/types/__fpos64_t.h:
+
 /home/tommitah/development/graphics-course/lecture10/transformation1/shader.hpp:
+
+/usr/include/glm/ext/matrix_projection.inl:
 
 /home/tommitah/development/graphics-course/lecture10/transformation1/shader.cpp:
 
 /usr/include/c++/10.2/string:
 
-/usr/include/c++/10.2/algorithm:
+/usr/include/glm/detail/type_mat2x2.inl:
 
-/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/c++config.h:
-
-/usr/include/c++/10.2/bits/stl_tempbuf.h:
-
-/usr/include/c++/10.2/initializer_list:
+/usr/include/c++/10.2/bits/stringfwd.h:
 
 /usr/include/c++/10.2/bits/memoryfwd.h:
 
-/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/gthr-default.h:
+/usr/include/bits/select.h:
 
-/usr/include/c++/10.2/bits/hash_bytes.h:
-
-/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/os_defines.h:
-
-/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/cpu_defines.h:
-
-/usr/include/c++/10.2/bits/stl_algobase.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/10.2/ext/numeric_traits.h:
-
-/usr/include/c++/10.2/bits/vector.tcc:
-
-/usr/include/c++/10.2/bits/move.h:
-
-/usr/include/c++/10.2/bits/char_traits.h:
-
-/usr/include/c++/10.2/type_traits:
-
-/usr/include/c++/10.2/iostream:
-
-/usr/include/c++/10.2/bits/stl_iterator_base_types.h:
-
-/usr/include/c++/10.2/bits/concept_check.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/c++/10.2/bits/ptr_traits.h:
-
-/usr/include/c++/10.2/debug/debug.h:
-
-/usr/include/c++/10.2/bits/range_cmp.h:
-
-/usr/include/wchar.h:
-
-/usr/include/bits/types/wint_t.h:
-
-/usr/include/c++/10.2/bits/postypes.h:
-
-/usr/include/locale.h:
-
-/usr/include/c++/10.2/bits/iterator_concepts.h:
-
-/usr/include/c++/10.2/ext/type_traits.h:
-
-/usr/include/c++/10.2/cstdint:
-
-/usr/include/c++/10.2/bits/allocator.h:
-
-/usr/include/c++/10.2/bits/stl_iterator.h:
-
-/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/c++allocator.h:
-
-/usr/include/c++/10.2/ext/new_allocator.h:
-
-/usr/include/bits/types/mbstate_t.h:
-
-/usr/include/c++/10.2/new:
-
-/usr/include/c++/10.2/cctype:
-
-/usr/include/c++/10.2/bits/functexcept.h:
-
-/usr/include/bits/endian.h:
-
-/usr/include/c++/10.2/bits/exception_ptr.h:
-
-/usr/include/c++/10.2/bits/locale_facets.tcc:
-
-/usr/include/c++/10.2/bits/ios_base.h:
-
-/usr/include/c++/10.2/bits/cxxabi_init_exception.h:
-
-/usr/include/c++/10.2/concepts:
-
-/usr/include/c++/10.2/bits/nested_exception.h:
-
-/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/c++locale.h:
-
-/usr/include/bits/locale.h:
-
-/usr/include/c++/10.2/x86_64-unknown-linux-gnu/bits/ctype_inline.h:
-
-/usr/include/c++/10.2/ext/string_conversions.h:
-
-/usr/include/c++/10.2/clocale:
-
-/usr/include/c++/10.2/bits/ostream.tcc:
-
-/usr/include/c++/10.2/iosfwd:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/10.2/bits/istream.tcc:
-
-/usr/include/c++/10.2/bits/stl_function.h:
-
-/usr/include/sched.h:
-
-/usr/include/c++/10.2/backward/binders.h:
-
-/usr/include/c++/10.2/bits/range_access.h:
-
-/usr/include/string.h:
-
-/usr/include/c++/10.2/bits/basic_string.h:
+/usr/include/c++/10.2/bits/stl_pair.h:
