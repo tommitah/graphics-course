@@ -19,10 +19,9 @@ int main() {
   glEnableVertexAttribArray(0);
   glViewport(0, 0, 600, 600);
 
-  while(!glfwWindowShouldClose(window)) {
-  	glClear(GL_COLOR_BUFFER_BIT);
-  	glDrawArrays(GL_TRIANGLES, 0, 3);
-  	glfwSwapBuffers(window);
+  while (!glfwWindowShouldClose(window)) {
+    glClear(GL_COLOR_BUFFER_BIT);
+    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glfwSwapBuffers(window);
   }
-
 }

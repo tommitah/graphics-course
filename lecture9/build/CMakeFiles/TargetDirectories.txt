@@ -1,0 +1,3 @@
+/home/tommitah/development/graphics-course/lecture9/build/CMakeFiles/lecture9_triangle.dir
+/home/tommitah/development/graphics-course/lecture9/build/CMakeFiles/edit_cache.dir
+/home/tommitah/development/graphics-course/lecture9/build/CMakeFiles/rebuild_cache.dir

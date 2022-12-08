@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/tommitah/development/graphics-course/lecture9/build",
+  "command": "/bin/cc    -o CMakeFiles/lecture9_triangle.dir/glad.c.o -c /home/tommitah/development/graphics-course/lecture9/glad.c",
+  "file": "/home/tommitah/development/graphics-course/lecture9/glad.c"
+},
+{
+  "directory": "/home/tommitah/development/graphics-course/lecture9/build",
+  "command": "/bin/c++    -o CMakeFiles/lecture9_triangle.dir/main.cpp.o -c /home/tommitah/development/graphics-course/lecture9/main.cpp",
+  "file": "/home/tommitah/development/graphics-course/lecture9/main.cpp"
+}
+]
