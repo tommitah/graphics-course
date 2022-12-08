@@ -1,0 +1,1 @@
+/bin/c++ CMakeFiles/lecture10_tranformations.dir/glad.c.o CMakeFiles/lecture10_tranformations.dir/main.cpp.o -o lecture10_tranformations  -lGL -ldl -lglfw 

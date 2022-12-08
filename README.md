@@ -4,9 +4,9 @@
 Running these programs requires binary packages that are packaged in the distro.
 deps:
 
-(Void) ```sudo xbps-install -S glfw glfw-devel```
+(Void) ```sudo xbps-install -S glfw glfw-devel glm```
 
-(Ubuntu/other Debian) ```sudo apt install libglfw3 libglfw3-dev```
+(Ubuntu/other Debian) ```sudo apt install libglfw3 libglfw3-dev libglm libglm-dev```
 
 # setup
 unzip glad.zip
