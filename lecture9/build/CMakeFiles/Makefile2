@@ -81,12 +81,12 @@ clean: CMakeFiles/lecture9_triangle.dir/clean
 CMakeFiles/lecture9_triangle.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lecture9_triangle.dir/build.make CMakeFiles/lecture9_triangle.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lecture9_triangle.dir/build.make CMakeFiles/lecture9_triangle.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tommitah/development/graphics-course/lecture9/build/CMakeFiles --progress-num=1,2,3 "Built target lecture9_triangle"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tommitah/development/graphics-course/lecture9/build/CMakeFiles --progress-num=1,2,3,4 "Built target lecture9_triangle"
 .PHONY : CMakeFiles/lecture9_triangle.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lecture9_triangle.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tommitah/development/graphics-course/lecture9/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tommitah/development/graphics-course/lecture9/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lecture9_triangle.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/tommitah/development/graphics-course/lecture9/build/CMakeFiles 0
 .PHONY : CMakeFiles/lecture9_triangle.dir/rule

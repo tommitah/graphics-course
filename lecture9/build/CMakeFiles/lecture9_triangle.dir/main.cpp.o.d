@@ -19,4 +19,5 @@ CMakeFiles/lecture9_triangle.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-unknown-linux-gnu/10.2/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/wchar.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/GLFW/glfw3.h
+ /usr/include/GLFW/glfw3.h \
+ /home/tommitah/development/graphics-course/lecture9/shader.hpp

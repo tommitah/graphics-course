@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/tommitah/development/graphics-course/lecture9/build",
+  "command": "/bin/c++    -o CMakeFiles/lecture9_triangle.dir/shader.cpp.o -c /home/tommitah/development/graphics-course/lecture9/shader.cpp",
+  "file": "/home/tommitah/development/graphics-course/lecture9/shader.cpp"
+},
+{
+  "directory": "/home/tommitah/development/graphics-course/lecture9/build",
   "command": "/bin/c++    -o CMakeFiles/lecture9_triangle.dir/main.cpp.o -c /home/tommitah/development/graphics-course/lecture9/main.cpp",
   "file": "/home/tommitah/development/graphics-course/lecture9/main.cpp"
 }

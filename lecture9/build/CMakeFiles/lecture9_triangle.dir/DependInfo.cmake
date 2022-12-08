@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/tommitah/development/graphics-course/lecture9/glad.c" "CMakeFiles/lecture9_triangle.dir/glad.c.o" "gcc" "CMakeFiles/lecture9_triangle.dir/glad.c.o.d"
   "/home/tommitah/development/graphics-course/lecture9/main.cpp" "CMakeFiles/lecture9_triangle.dir/main.cpp.o" "gcc" "CMakeFiles/lecture9_triangle.dir/main.cpp.o.d"
+  "/home/tommitah/development/graphics-course/lecture9/shader.cpp" "CMakeFiles/lecture9_triangle.dir/shader.cpp.o" "gcc" "CMakeFiles/lecture9_triangle.dir/shader.cpp.o.d"
   )
 
 # Targets to which this target links.

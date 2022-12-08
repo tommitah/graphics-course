@@ -1,1 +1,1 @@
-/bin/c++ CMakeFiles/lecture9_triangle.dir/glad.c.o CMakeFiles/lecture9_triangle.dir/main.cpp.o -o lecture9_triangle  -lGL -ldl -lglfw 
+/bin/c++ CMakeFiles/lecture9_triangle.dir/glad.c.o CMakeFiles/lecture9_triangle.dir/shader.cpp.o CMakeFiles/lecture9_triangle.dir/main.cpp.o -o lecture9_triangle  -lGL -ldl -lglfw 

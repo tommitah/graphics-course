@@ -1,1 +1,0 @@
-/bin/c++ CMakeFiles/babbys_first_triangle.dir/glad.c.o CMakeFiles/babbys_first_triangle.dir/main.cpp.o -o babbys_first_triangle  -lGL -ldl -lglfw 
