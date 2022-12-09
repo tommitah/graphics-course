@@ -9,7 +9,9 @@ deps:
 (Ubuntu/other Debian) ```sudo apt install libglfw3 libglfw3-dev libglm libglm-dev```
 
 # setup
-unzip glad.zip
+Clone this repo with ```git clone <url>```.
+
+```unzip glad.zip```.
 
 Inside there's three files: ```glad.c```, ```glad.h``` and ```khrplatform.h```.
 The header files should go to /usr/include/glad.
@@ -19,6 +21,11 @@ Be sure to check that all three files have consistent #includes (clangd-lsp shou
 That leaves the glad.c file, which can be included in the source directory.
 
 # compiling and running
+if present, remove the ```build/```, ```.cache/``` and ```compile_commands.json``` directories
+and files.
+
+```rm -rf build/ .cache/ compile_commands.json```
+
 Compiling:
 
 create a CMakeLists.txt file
