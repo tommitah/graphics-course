@@ -1,15 +1,8 @@
-#include <glm/ext/matrix_transform.hpp>
 #include <stdio.h>
-#include <vector>
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-#include <glm/glm.hpp>
-
-#include "shader.hpp"
-#include "objloader.hpp"
-#include "Mesh.h"
 #include "Scene.h"
 
 GLFWwindow* InitWindow() {
@@ -23,7 +16,7 @@ GLFWwindow* InitWindow() {
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 	GLFWwindow* window;
-	window = glfwCreateWindow(512, 512, "light", NULL, NULL);
+	window = glfwCreateWindow(512, 512, "Light", NULL, NULL);
 	if (window == NULL) {
 		fprintf(stderr, "window failed");
 		glfwTerminate();

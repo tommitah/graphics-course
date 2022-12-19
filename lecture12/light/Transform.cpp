@@ -1,6 +1,5 @@
-#include "Transform.h"
 #include <glm/ext/matrix_transform.hpp>
-#include <glm/fwd.hpp>
+#include "Transform.h"
 
 Transform::Transform() {
 	m_translateMatrix = glm::mat4(1.0f);

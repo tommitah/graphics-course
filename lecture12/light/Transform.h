@@ -1,8 +1,7 @@
 #pragma once
 #include <glm/glm.hpp>
 
-class Transform
-{
+class Transform {
 public:
 	glm::mat4 m_translateMatrix;
 	glm::mat4 m_rotationMatrix;

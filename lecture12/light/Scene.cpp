@@ -9,17 +9,17 @@ Scene::Scene() {
 
 	GLuint m_viewMatrixID = glGetUniformLocation(m_shaderID, "vm");
 	GLuint m_projectionMatrixID = glGetUniformLocation(m_shaderID, "pm");
-	GLuint m_lightAmountID = glGetUniformLocation(m_shaderID, "pm");
-	GLuint m_lightDirectionID = glGetUniformLocation(m_shaderID, "pm");
+	GLuint m_lightAmountID = glGetUniformLocation(m_shaderID, "LightAmount");
+	GLuint m_lightDirectionID = glGetUniformLocation(m_shaderID, "LightDirection");
 
-	glm::mat4 projection = glm::perspective(
+	m_projectionMatrix = glm::perspective(
 			glm::radians(45.0f),
 			4.0f/3.0f,
 			0.1f,
 			100.0f
 	);
 
-	glm::mat4 view = glm::lookAt(
+	m_viewMatrix = glm::lookAt(
 			glm::vec3(4, 3, 3),
 			glm::vec3(0, 0, 0),
 			glm::vec3(0, 1, 0)

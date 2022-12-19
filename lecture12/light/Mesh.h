@@ -1,9 +1,7 @@
 #pragma once
-#include <GLFW/glfw3.h>
 #include <string>
 #include <vector>
 #include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
 #include "Transform.h"
 
 class Mesh : public Transform {
@@ -17,8 +15,8 @@ public:
 
 private:
 	std::vector<glm::vec3> m_vertices;
-	std::vector<glm::vec2> m_uvs;
 	std::vector<glm::vec3> m_normals;
+	std::vector<glm::vec2> m_uvs;
 	GLuint m_vbo;
 	GLuint m_vuv;
 	GLuint m_vno;

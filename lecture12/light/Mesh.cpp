@@ -1,9 +1,17 @@
 #include <stdio.h>
+#include <glm/glm.hpp>
 #include <glad/glad.h>
+#include <glm/gtc/matrix_transform.hpp>
+#include <vector>
 #include "objloader.hpp"
 #include "Mesh.h"
 
 Mesh::Mesh() {}
+
+Mesh::~Mesh() {
+	// Clear separately so no need to destroy the 'class' (instance?)
+	Clear();
+}
 
 void Mesh::Init(std::string file, GLuint shader) {
 	m_file = file;
@@ -15,11 +23,6 @@ void Mesh::Init(std::string file, GLuint shader) {
 
 	m_shader = shader;
 	Load();
-}
-
-Mesh::~Mesh() {
-	// Clear separately so no need to destroy the 'class' (instance?)
-	Clear();
 }
 
 void Mesh::Clear() {
@@ -42,7 +45,6 @@ void Mesh::DrawMesh() {
 
 	glBindVertexArray(m_vao);
 	glDrawArrays(GL_TRIANGLES, 0, m_vertices.size());
-	glBindVertexArray(0);
 }
 
 void Mesh::Load() {
@@ -107,6 +109,4 @@ void Mesh::Load() {
 			GL_FALSE,
 			0,
 			(void*)0);
-
-	glBindVertexArray(0);
 }
