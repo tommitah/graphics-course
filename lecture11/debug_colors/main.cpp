@@ -70,7 +70,13 @@ int main(void) {
 			glm::vec3(0, 1, 0)
 	);
 
-	Mesh mesh = Mesh("../bunny.obj", programID);
+	Mesh meshes[2] = {
+		Mesh("../bunny.obj", programID),
+		Mesh("../dino.obj", programID),
+	};
+
+	meshes[0].Translate(glm::vec3(-1, 0, 0));
+	meshes[1].Translate(glm::vec3(1, 0, 0));
 
 	do {
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -80,7 +86,9 @@ int main(void) {
 		glUniformMatrix4fv(viewMatrixID,		1, GL_FALSE, &view[0][0]);
 		glUniformMatrix4fv(projectionMatrixID,	1, GL_FALSE, &projection[0][0]);
 
-		mesh.DrawMesh();
+		for(int i=0; i < 2; ++i) {
+			meshes[i].DrawMesh();
+		}
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();
@@ -88,7 +96,10 @@ int main(void) {
 	} while (glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS
 		&& glfwWindowShouldClose(window) == 0);
 
-	mesh.Clear();
+	for(int i=0; i < 2; ++i) {
+		meshes[i].Clear();
+	}
+
 	glDeleteProgram(programID);
 
 	glfwTerminate();
