@@ -9,10 +9,6 @@ void Mesh::Init(std::string file, GLuint shader) {
 	m_file = file;
 	m_translateMatrix = glm::mat4(1);
 	m_rotationMatrix = glm::mat4(1);
-
-	m_modelMatrixID = glGetUniformLocation(shader, "mm");
-	m_itMatrixID = glGetUniformLocation(shader, "it");
-
 	m_shader = shader;
 	Load();
 }
