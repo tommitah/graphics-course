@@ -12,7 +12,7 @@ public:
 	~Mesh();
 	void Clear();
 	void DrawMesh();
-	void Translate(glm::vec3);
+	void Translate(glm::vec3 position);
 
 private:
 	std::vector<glm::vec3> m_vertices;

@@ -12,10 +12,7 @@
 #include "objloader.hpp"
 #include "Mesh.h"
 
-int vertexCount = 0;
-
-GLFWwindow*
-InitWindows() {
+GLFWwindow* InitWindows() {
 	if (!glfwInit()) {
 		fprintf(stderr, "GLFW Error");
 		return NULL;
@@ -44,46 +41,7 @@ InitWindows() {
 	return window;
 }
 
-GLuint
-SetVAO() {
-	std::vector<glm::vec3> vertices;
-	std::vector<glm::vec2> uvs;
-	std::vector<glm::vec3> normals;
-
-	loadOBJ("../bunny.obj", vertices, uvs, normals);
-
-	GLuint vbo = 0;
-	glGenBuffers(1, &vbo);
-	glBindBuffer(GL_ARRAY_BUFFER, vbo);
-	glBufferData(
-			GL_ARRAY_BUFFER,
-			vertices.size() * sizeof(glm::vec3),
-			&vertices[0],
-			GL_STATIC_DRAW
-	);
-
-	GLuint vao;
-	glGenVertexArrays(1, &vao);
-	glBindVertexArray(vao);
-
-	glEnableVertexAttribArray(0);
-	glBindBuffer(GL_ARRAY_BUFFER, vbo);
-	glVertexAttribPointer(
-			0,// shader index
-			3,// amount
-			GL_FLOAT, // type
-			GL_FALSE, // not normalized
-			0,
-			(void*)0
-	);
-
-	vertexCount = vertices.size();
-
-	return vao;
-}
-
-int
-main() {
+int main(void) {
 	GLFWwindow* window = InitWindows();
 	if (window == NULL) {
 		fprintf(stderr, "something is terribly wrong");
@@ -91,15 +49,12 @@ main() {
 	}
 
 	glClearColor(0.0f, 0.0f, 0.4f, 1.0f);
-
-	// VAO = Vertex Array Object
-	// refactoring like this causes a memory leak since vbo isn't being handled anymore
-	GLuint vao = SetVAO();
+	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LESS);
 
 	// NOTE to self: these are relative paths from the build directory, not this file
 	GLuint programID = LoadShaders("../vertexshader.glsl", "../fragmentshader.glsl");
 
-	GLuint modelMatrixID = glGetUniformLocation(programID, "mm");
 	GLuint viewMatrixID = glGetUniformLocation(programID, "vm");
 	GLuint projectionMatrixID = glGetUniformLocation(programID, "pm");
 
@@ -114,19 +69,18 @@ main() {
 			glm::vec3(0, 0, 0),
 			glm::vec3(0, 1, 0)
 	);
-	glm::mat4 model = glm::mat4(1);
 
-	glUseProgram(programID);
+	Mesh mesh = Mesh("../bunny.obj", programID);
 
 	do {
-		glClear(GL_COLOR_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-		glUniformMatrix4fv(modelMatrixID,		1, GL_FALSE, &model[0][0]);
+
+		glUseProgram(programID);
 		glUniformMatrix4fv(viewMatrixID,		1, GL_FALSE, &view[0][0]);
 		glUniformMatrix4fv(projectionMatrixID,	1, GL_FALSE, &projection[0][0]);
 
-		glBindVertexArray(vao);
-		glDrawArrays(GL_TRIANGLES, 0, vertexCount);
+		mesh.DrawMesh();
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();
@@ -134,7 +88,8 @@ main() {
 	} while (glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS
 		&& glfwWindowShouldClose(window) == 0);
 
-	glDeleteVertexArrays(1, &vao);
+	mesh.Clear();
 	glDeleteProgram(programID);
+
 	glfwTerminate();
 }
