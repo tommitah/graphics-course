@@ -20,7 +20,6 @@ void Mesh::Init(std::string file, GLuint shader) {
 
 	m_modelMatrixID = glGetUniformLocation(shader, "mm");
 	m_itMatrixID = glGetUniformLocation(shader, "it");
-	m_textureID = glGetUniformLocation(shader, "mainTex");
 
 	m_shader = shader;
 	Load();
@@ -43,6 +42,11 @@ void Mesh::DrawMesh() {
 
 	glm::mat3 invTranspose = glm::transpose(glm::inverse(glm::mat3(m_matrix)));
 	glUniformMatrix3fv(m_itMatrixID, 1, GL_FALSE, &invTranspose[0][0]);
+
+	glUniform1i(m_texAID, 0);
+	glUniform1i(m_texBID, 1);
+
+
 
 	glBindVertexArray(m_vao);
 	glDrawArrays(GL_TRIANGLES, 0, m_vertices.size());
@@ -109,9 +113,15 @@ void Mesh::Load() {
 		0,
 		(void*)0);
 
-	m_mainTex = loadDDS("../texture.dds");
-	// bind the texture
-	glUniform1i(m_textureID, 0);
-	glActiveTexture(GL_TEXTURE);
-	glBindTexture(GL_TEXTURE_2D, m_mainTex);
+	m_texAID = glGetUniformLocation(m_shader, "texA");
+	m_texBID = glGetUniformLocation(m_shader, "texB");
+
+	m_texA = loadDDS("../texture_a.dds");
+	m_texB = loadDDS("../texture_b.dds");
+	// bind the texture(s)
+	// glUniform1i(m_texAID, 0);
+	// glUniform1i(m_texBID, 1);
+	// glActiveTexture(GL_TEXTURE);
+	// glBindTexture(GL_TEXTURE_2D, m_texA);
+	// glBindTexture(GL_TEXTURE_2D, m_texB);
 }

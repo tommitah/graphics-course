@@ -26,8 +26,10 @@ private:
 	GLuint m_modelMatrixID;
 	GLuint m_itMatrixID;
 	GLuint m_shader;
-	GLuint m_mainTex;
-	GLuint m_textureID;
+	GLuint m_texA;
+	GLuint m_texB;
+	GLuint m_texAID;
+	GLuint m_texBID;
 
 	void Load();
 };
