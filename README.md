@@ -2,6 +2,8 @@
 
 # deps
 Running these programs requires binary packages that are packaged in the distro.
+In addition to this, the code uses glad (redhat) instead of glew for extensions.
+Glad is included in the repo.
 deps:
 
 (Void) ```sudo xbps-install -S glfw glfw-devel glm```
