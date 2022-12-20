@@ -28,10 +28,10 @@ private:
 	GLuint m_shader;
 	GLuint m_texA;
 	GLuint m_texB;
-	GLuint m_texMask;
+	GLuint m_texM;
 	GLuint m_texAID;
 	GLuint m_texBID;
-	GLuint m_texMaskID;
+	GLuint m_texMID;
 
 	void Load();
 };

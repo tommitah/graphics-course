@@ -45,12 +45,16 @@ void Mesh::DrawMesh() {
 
 	glUniform1i(m_texAID, 0);
 	glUniform1i(m_texBID, 1);
+	glUniform1i(m_texMID, 2);
 
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, m_texA);
 
 	glActiveTexture(GL_TEXTURE1);
 	glBindTexture(GL_TEXTURE_2D, m_texB);
+
+	glActiveTexture(GL_TEXTURE2);
+	glBindTexture(GL_TEXTURE_2D, m_texM);
 
 	glBindVertexArray(m_vao);
 	glDrawArrays(GL_TRIANGLES, 0, m_vertices.size());
@@ -119,7 +123,9 @@ void Mesh::Load() {
 
 	m_texAID = glGetUniformLocation(m_shader, "texA");
 	m_texBID = glGetUniformLocation(m_shader, "texB");
+	m_texMID = glGetUniformLocation(m_shader, "texM");
 
-	m_texA = loadDDS("../texture_a.dds");
-	m_texB = loadDDS("../texture_b.dds");
+	m_texA = loadDDS("../textures/texture_a.dds");
+	m_texB = loadDDS("../textures/texture_b.dds");
+	m_texM = loadDDS("../textures/mask.dds");
 }
