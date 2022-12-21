@@ -44,15 +44,6 @@ void Mesh::DrawMesh() {
 	glm::mat3 invTranspose = glm::transpose(glm::inverse(glm::mat3(m_matrix)));
 	glUniformMatrix3fv(m_itMatrixID, 1, GL_FALSE, &invTranspose[0][0]);
 
-	glUniform1i(m_texAID, 0);
-	glUniform1i(m_texBID, 1);
-
-	glActiveTexture(GL_TEXTURE0);
-	glBindTexture(GL_TEXTURE_2D, m_texA);
-
-	glActiveTexture(GL_TEXTURE1);
-	glBindTexture(GL_TEXTURE_2D, m_texB);
-
 	glBindVertexArray(m_vao);
 	glDrawArrays(GL_TRIANGLES, 0, m_vertices.size());
 }
@@ -120,10 +111,4 @@ void Mesh::Load() {
 		GL_FALSE,
 		0,
 		(void*)0);
-
-	m_texAID = glGetUniformLocation(m_shader, "texA");
-	m_texBID = glGetUniformLocation(m_shader, "texB");
-
-	m_texA = loadDDS("../texture_a.dds");
-	m_texB = loadDDS("../texture_b.dds");
 }

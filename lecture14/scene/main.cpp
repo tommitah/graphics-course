@@ -49,7 +49,7 @@ int main(void)
 	glDepthFunc(GL_LESS);
 
 	Scene scene;
-	scene.AddMesh("../bunny.obj");
+	if (!scene.LoadScene("../scene.scn")) return 0;
 
 	do {
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

@@ -12,6 +12,7 @@ public:
 	~Transform();
 	void Translate(glm::vec3 p);
 	void Rotate(float a, glm::vec3 axis);
+	void Rotate(glm::vec3 euler);
 	glm::vec3 Forward();
 	void UpdateMatrix();
 };

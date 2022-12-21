@@ -10,7 +10,7 @@ class Scene {
 public:
 	Scene(); 
 	~Scene();
-	void AddMesh(std::string file);
+	bool LoadScene(std::string file);
 	void DrawScene();
 	void Clear();
 

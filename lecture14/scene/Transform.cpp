@@ -1,4 +1,5 @@
 #include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtx/euler_angles.hpp>
 #include "Transform.h"
 
 Transform::Transform()
@@ -22,6 +23,12 @@ void Transform::Rotate(float a, glm::vec3 axis)
 {
     m_rotationMatrix = glm::mat4(1.0f);
     m_rotationMatrix = glm::rotate(m_rotationMatrix, a, axis);
+}
+
+void Transform::Rotate(glm::vec3 euler)
+{
+    m_rotationMatrix = glm::mat4(1.0f);
+    m_rotationMatrix = glm::eulerAngleXYZ(euler.x, euler.y, euler.z);
 }
 
 glm::vec3 Transform::Forward()
