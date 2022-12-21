@@ -29,8 +29,6 @@ and files.
 ```rm -rf build/ .cache/ compile_commands.json```
 
 Compiling:
-
-create a CMakeLists.txt file
 ```
 mkdir build && cd build
 cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 ..
@@ -42,6 +40,7 @@ To run:
 ./binary
 ```
 # shaders
-NOTE about shaders:
-The LoadShaders function takes two paths: these are relative paths from
-the build directory, not the file the function is ran from.
+NOTE about filepaths:
+The functions that take filepaths as arguments should always be a path RELATIVE to the 
+binary, not necessarily the directory where the function is ran from!
+With the build directory this would mean for example: LoadShaders("../shader");
