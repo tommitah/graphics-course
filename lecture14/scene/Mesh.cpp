@@ -11,7 +11,7 @@
 Mesh::Mesh() {}
 
 Mesh::~Mesh() {
-	Clear();
+	// Clear();
 }
 
 void Mesh::Init(std::string file, GLuint shader) {

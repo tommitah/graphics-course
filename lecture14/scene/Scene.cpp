@@ -1,6 +1,7 @@
 #include <fstream>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glad/glad.h>
+#include "Material.h"
 #include "shader.hpp"
 #include "Scene.h"
 
@@ -9,10 +10,6 @@ Scene::Scene() {
 	m_shaderID = LoadShaders("../vertexshader.glsl", "../fragmentshader.glsl");
 	m_viewMatrixID = glGetUniformLocation(m_shaderID, "vm");
 	m_projectionMatrixID = glGetUniformLocation(m_shaderID, "pm");
-
-	m_lightAmountID = glGetUniformLocation(m_shaderID, "LightAmount");
-	m_lightDirectionID = glGetUniformLocation(m_shaderID, "LightDirection");
-	m_light.Rotate(glm::radians(-90.0f), glm::vec3(0.0f, 1.0f, 0.0));
 }
 
 Scene::~Scene() {
@@ -72,7 +69,14 @@ bool Scene::LoadScene(std::string filePath) {
 		// Init loads automagically
 		mesh.Init(d + "/" + meshFile, m_shaderID);
 		mesh.Translate(glm::vec3(px, py, pz));
+
+		Material material( d + "/" + colorTexFile, m_shaderID);
+
+		m_meshes.push_back(mesh);
 	}
+
+	file.close();
+	printf("Loading done.\n");
 
 	return true;
 }
@@ -81,11 +85,9 @@ void Scene::DrawScene() {
 	glUseProgram(m_shaderID);
 
 	glm::vec3 p(0, 2, 3);
-	m_camera.Translate(p);
-
 	glm::vec3 r(-0.6, 0, 0);
+	m_camera.Translate(p);
 	m_camera.Rotate(r);
-	m_light.UpdateMatrix();
 	m_camera.UpdateMatrix();
 
 	glm::mat4 vm = m_camera.GetViewMatrix();
@@ -93,9 +95,6 @@ void Scene::DrawScene() {
 	glUniformMatrix4fv(m_viewMatrixID, 1, GL_FALSE, &vm[0][0]);
 	glUniformMatrix4fv(m_projectionMatrixID, 1, GL_FALSE, &pm[0][0]);
 
-	glUniform1f(m_lightAmountID, m_light.m_amount);
-	glm::vec3 d = m_light.Forward();
-	glUniform3f(m_lightDirectionID, d.x, d.y, d.z);
 	for (int i = 0; i < (int)m_meshes.size(); ++i) {
 		m_meshes[i].DrawMesh();
 	}
