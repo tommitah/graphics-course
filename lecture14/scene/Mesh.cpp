@@ -26,6 +26,8 @@ void Mesh::Init(std::string file, GLuint shader) {
 	Load();
 }
 
+void Mesh::SetMaterial(Material material) { m_material = material; }
+
 void Mesh::Clear() {
 	m_vertices.clear();
 	m_uvs.clear();
@@ -43,6 +45,10 @@ void Mesh::DrawMesh() {
 
 	glm::mat3 invTranspose = glm::transpose(glm::inverse(glm::mat3(m_matrix)));
 	glUniformMatrix3fv(m_itMatrixID, 1, GL_FALSE, &invTranspose[0][0]);
+
+	glUniform1i(m_material.m_colorTexID, 0);
+	glActiveTexture(GL_TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D, m_material.m_colorTex);
 
 	glBindVertexArray(m_vao);
 	glDrawArrays(GL_TRIANGLES, 0, m_vertices.size());

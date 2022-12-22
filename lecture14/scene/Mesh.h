@@ -3,6 +3,7 @@
 #include <vector>
 #include <glm/glm.hpp>
 #include "Transform.h"
+#include "Material.h"
 
 #include <GLFW/glfw3.h>
 
@@ -15,6 +16,7 @@ public:
 	void Clear();
 	void GL_GenerateAndBindBuffers();
 	void DrawMesh();
+	void SetMaterial(Material m);
 
 private:
 	std::vector<glm::vec3> m_vertices;
@@ -27,6 +29,7 @@ private:
 	GLuint m_modelMatrixID;
 	GLuint m_itMatrixID;
 	GLuint m_shader;
+	Material m_material;
 
 	void Load();
 };

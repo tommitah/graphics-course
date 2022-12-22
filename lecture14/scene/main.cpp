@@ -17,7 +17,7 @@ GLFWwindow* InitWindow() {
 	GLFWwindow* window;
 	window = glfwCreateWindow(
 		512, 512,
-		"Camera",
+		"Tree trunk scene",
 		NULL, NULL);
 	if (window == NULL) {
 		fprintf(stderr, "Window failed.");

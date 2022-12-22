@@ -71,6 +71,7 @@ bool Scene::LoadScene(std::string filePath) {
 		mesh.Translate(glm::vec3(px, py, pz));
 
 		Material material( d + "/" + colorTexFile, m_shaderID);
+		mesh.SetMaterial(material);
 
 		m_meshes.push_back(mesh);
 	}
