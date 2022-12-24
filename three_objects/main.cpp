@@ -48,6 +48,7 @@ int main(void)
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
 
+	// TODO: either don't use Scene at all, or refactor it to not use the .scn file
 	Scene scene;
 	if (!scene.LoadScene("../scene.scn")) return 0;
 
