@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "Scene.h"
 
 GLFWwindow* InitWindow() {
 	if (!glfwInit()) {
@@ -17,8 +16,9 @@ GLFWwindow* InitWindow() {
 	GLFWwindow* window;
 	window = glfwCreateWindow(
 		512, 512,
-		"Tree trunk scene",
+		"Three objects",
 		NULL, NULL);
+
 	if (window == NULL) {
 		fprintf(stderr, "Window failed.");
 		glfwTerminate();
@@ -36,6 +36,12 @@ GLFWwindow* InitWindow() {
 	return window;
 }
 
+
+// TODO
+// 1. create window DONE
+// 2. create mesh for objects
+// 3. instantiate objects and show them
+// 4. move objects
 int main(void)
 {
 	GLFWwindow* window = InitWindow();
@@ -43,25 +49,11 @@ int main(void)
 		return -1;
 	}
 	
+	printf("In the clear!\n");
 	glClearColor(0.0f, 0.0f, 0.4f, 1.0f);
 
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
-
-	// TODO: either don't use Scene at all, or refactor it to not use the .scn file
-	Scene scene;
-	if (!scene.LoadScene("../scene.scn")) return 0;
-
-	do {
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-		scene.DrawScene();
-
-		glfwSwapBuffers(window);
-		glfwPollEvents();
-	} while (glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(window) == 0);
-
-	scene.Clear();
 
 	glfwTerminate();
 }
