@@ -4,11 +4,12 @@ project(three_objects)
 
 add_executable(${PROJECT_NAME}
 	glad.c
+	window.cpp
 	# shader.cpp
-	# objloader.cpp
-	# Transform.cpp
+	objloader.cpp
+	transform.cpp
 	# Scene.cpp
-	# Mesh.cpp
+	mesh.cpp
 	# Light.cpp
 	# texture.cpp
 	# Camera.cpp
