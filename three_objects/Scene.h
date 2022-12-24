@@ -11,6 +11,7 @@ public:
 	Scene(); 
 	~Scene();
 	bool LoadScene(std::string file);
+	bool LoadScene(int something);
 	void DrawScene();
 	void Clear();
 

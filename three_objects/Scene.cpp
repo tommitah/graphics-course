@@ -16,6 +16,10 @@ Scene::~Scene() {
 	Clear();
 }
 
+bool Scene::LoadScene(int something) {
+	return true;
+}
+
 // Scene::LoadScene reads a Mesh, Texture and Material from a file,
 // initializes the mesh and sets the transform and material for it.
 // We could replace or overload this method with a simpler implementation for our
